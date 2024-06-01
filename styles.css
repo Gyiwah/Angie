@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff69b4, #800080);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animation img {
+    width: 150px;
+    animation: float 4s infinite, fadeIn 2s ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.photos img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+#countdown {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ff69b4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.messages {
+    margin-top: 20px;
+}
+
+.messages h2 {
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.8);
+    color: #800080;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    animation: fadeIn 2s ease-in-out;
+}
