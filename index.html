@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <div class="container">
@@ -18,15 +13,29 @@
             <h1>Happy Birthday in Advance, Angie!</h1>
         </header>
         <section class="animation">
-            <img src="8.png" alt="Balloon" id="balloon">
+            <img src="balloon.png" alt="Balloon" id="balloon">
         </section>
         <section id="countdown"></section>
         <section class="gallery">
             <h2>Memorable Moments</h2>
             <div class="photos">
-                <img src="1.jpg" alt="Photo 1">
-                <img src="2.jpg" alt="Photo 2">
-                <img src="7.jpg" alt="Photo 3">
+                <img src="photo1.jpg" alt="Photo 1">
+                <img src="photo2.jpg" alt="Photo 2">
+                <img src="photo3.jpg" alt="Photo 3">
+                <img src="photo4.jpg" alt="Photo 4">
+            </div>
+        </section>
+        <section class="videos">
+            <h2>Special Videos</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
         <section class="messages">
@@ -37,6 +46,20 @@
             <div class="message-box">
                 <p>Wishing you the happiest of birthdays and all the best for the year ahead!</p>
             </div>
+        </section>
+        <section class="wishes">
+            <h2>Wish Angie a Happy Birthday!</h2>
+            <form id="wish-form">
+                <textarea id="wish-text" placeholder="Write your message here..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="wishes-display"></div>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or want to get in touch, please contact me:</p>
+            <p>Email: gaf_tech@outlook.com</p>
+            <p>Phone: +233 (0)545 437 215</p>
         </section>
         <footer>
             <p>&copy; 2024 GAF Tech. All rights reserved.</p>
