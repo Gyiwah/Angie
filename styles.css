@@ -80,6 +80,28 @@ header h1 {
     transform: scale(1.1);
 }
 
+.videos {
+    margin-top: 20px;
+}
+
+.videos h2 {
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
 #countdown {
     margin-top: 20px;
     font-size: 2em;
@@ -87,11 +109,11 @@ header h1 {
     animation: fadeIn 2s ease-in-out;
 }
 
-.messages {
+.messages, .wishes, .contact {
     margin-top: 20px;
 }
 
-.messages h2 {
+.messages h2, .wishes h2, .contact h2 {
     margin-bottom: 10px;
     animation: fadeIn 2s ease-in-out;
 }
@@ -102,6 +124,54 @@ header h1 {
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#wish-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#wish-form textarea {
+    width: 80%;
+    max-width: 400px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff69b4;
+    margin-bottom: 10px;
+}
+
+#wish-form button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#wish-form button:hover {
+    background-color: #800080;
+}
+
+#wishes-display {
+    margin-top: 10px;
+}
+
+#wishes-display .wish {
+    background: rgba(255, 255, 255, 0.8);
+    color: #800080;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.contact p {
+    margin: 5px 0;
     animation: fadeIn 2s ease-in-out;
 }
 
