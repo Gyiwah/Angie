@@ -28,4 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
             $(this).animate({top: '-=200px'}, 1000);
         });
     });
+
+    // Handle wish form submission
+    const wishForm = document.getElementById('wish-form');
+    const wishText = document.getElementById('wish-text');
+    const wishesDisplay = document.getElementById('wishes-display');
+
+    wishForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const wish = wishText.value.trim();
+        if (wish) {
+            const wishElement = document.createElement('div');
+            wishElement.classList.add('wish');
+            wishElement.textContent = wish;
+            wishesDisplay.appendChild(wishElement);
+            wishText.value = '';
+        }
+    });
 });
