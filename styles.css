@@ -202,7 +202,7 @@ footer {
     animation: fadeIn 2s ease-in-out;
 }
 
-@media(max-width:490px){
+@media(max-width:550px){
     .photos-container {
         display: block;
         grid-template-columns: auto;
