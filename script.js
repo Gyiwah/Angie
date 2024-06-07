@@ -30,7 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
             $(this).animate({top: '-=200px'}, 1000);
         });
     });
-});
-function display(){
 
-}
+
+    $('#wish-form').submit(function(event) {
+        event.preventDefault();
+        const message = $('#wish-text').val();
+        const whatsappNumber = '233555327222';
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+        
+        window.open(whatsappURL, '_blank');
+    });
+
+    
+});
