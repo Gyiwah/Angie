@@ -349,7 +349,7 @@ footer {
 }
 @media(max-width:575px){
     .photos-container #denasty3 img {
-        width: 20px;
+        width: 280px;
         height: auto;
     }
     .video-container .video-content{
