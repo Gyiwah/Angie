@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Countdown Timer
     const countdownElement = document.getElementById('countdown');
     const birthday = new Date('June 8, 2024 00:00:00').getTime();
+    const countDownVideo = document.getElementById('count-down-video');
 
     const updateCountdown = () => {
         const now = new Date().getTime();
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (distance < 0) {
             clearInterval(countdownInterval);
             countdownElement.innerHTML = 'Happy Birthday!';
+            countDownVideo.style.display='block';
         }
     };
 
@@ -28,21 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $(this).animate({top: '-=200px'}, 1000);
         });
     });
-
-    // Handle wish form submission
-    const wishForm = document.getElementById('wish-form');
-    const wishText = document.getElementById('wish-text');
-    const wishesDisplay = document.getElementById('wishes-display');
-
-    wishForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const wish = wishText.value.trim();
-        if (wish) {
-            const wishElement = document.createElement('div');
-            wishElement.classList.add('wish');
-            wishElement.textContent = wish;
-            wishesDisplay.appendChild(wishElement);
-            wishText.value = '';
-        }
-    });
 });
+function display(){
+
+}
